@@ -1,0 +1,20 @@
+#userInfoForm {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  #userInfoForm label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  #userInfoForm input[type="text"],
+  #userInfoForm input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+  }
+  
+  #output {
+    margin-top: 20px;
+  }

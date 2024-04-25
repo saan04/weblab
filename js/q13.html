@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Number Generator</title>
+</head>
+<body>
+  <h2>Random Number Generator</h2>
+  <script>
+    function getRandomNumber(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    let count = parseInt(prompt("How many random numbers do you wish to generate?"));
+
+    if (isNaN(count) || count <= 0) {
+      alert("Please enter a valid positive number.");
+    } else {
+      let numbers = [];
+      let sum = 0;
+
+      for (let i = 0; i < count; i++) {
+        let randomNumber = getRandomNumber(1, 100);
+        numbers.push(randomNumber);
+        sum += randomNumber;
+      }
+
+      let average = sum / count;
+
+      alert("Generated Numbers: " + numbers.join(", ") + "\nAverage: " + average.toFixed(2));
+    }
+  </script>
+</body>
+</html>

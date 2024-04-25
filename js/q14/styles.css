@@ -1,0 +1,26 @@
+#registrationForm {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  #registrationForm label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  #registrationForm input[type="text"],
+  #registrationForm input[type="password"],
+  #registrationForm input[type="email"],
+  #registrationForm input[type="text"][name="yearOfBirth"] {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+  }
+  
+  #registrationForm input[type="checkbox"] {
+    margin-top: 5px;
+  }
+  
+  #registrationForm input[type="submit"] {
+    margin-top: 10px;
+  }
